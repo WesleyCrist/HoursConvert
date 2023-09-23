@@ -1,0 +1,12 @@
+{
+  "name": "hoursconvert",
+  "version": "0.6.0",
+  "description": "Conversor horário",
+  "main": "src/Convert.js",
+  "scripts": {
+  },
+  "keywords": [],
+  "type": "module",
+  "author": "WesleyCrist",
+  "license": "MIT"
+}
