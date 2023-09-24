@@ -16,31 +16,20 @@ export default class Convert {
                 const hora = Number(time[0])
                 const minute = Number(time[1])
                 if(!isNaN(hora) && !isNaN(minute)) {
-                    if(this.#verifyTime(hora, minute)) {
-                        return (hora * 60) + minute
-                    } else {
-                        throw new RangeError('Valor de horário fora dos limites!')
-                    }
-                } else {
-                    throw new TypeError('Atributo passado em formato inválido')
-                }
-            } else {
-                throw new TypeError('Formato de hora deve ser "23:59"')
-            }
-        } else {
-            throw new TypeError('Atributo passado em formato inválido')
-        }
+                    if(this.#verifyTime(hora, minute)) return (hora * 60) + minute
+                    else throw new RangeError('values outside the limits!')
+                } else throw new TypeError('attribute entered in invalid format!')
+            } else throw new TypeError('the format to be informed must be "23:59"PM!')
+        } else throw new TypeError('attribute entered in invalid format!')
     }
 
     #minutesToHours = i => {
-        if(i < 0 || i > 1439) throw new RangeError('Valor acima do permitido!')
+        if(i < 0 || i > 1439) throw new RangeError('value above permitted!')
         const integer = num => Number.isInteger(num)
         const ternary = num => num < 10 ? `0${num}`:`${num}`
-
         let amount = 0
         let split = i / 60
         let result
-
         if(integer(split)) return `${ternary(split)}:00`
         else {
             do {

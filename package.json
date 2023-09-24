@@ -1,11 +1,11 @@
 {
   "name": "hoursconvert",
-  "version": "0.6.0",
+  "version": "0.6.2",
   "description": "Conversor horário",
   "main": "src/Convert.js",
   "scripts": {
   },
-  "keywords": [],
+  "keywords": ["hoursconvert", "convert", "hours", "hour", "pm", "time", "times", "minutes", "min", "duration"],
   "type": "module",
   "author": "WesleyCrist",
   "license": "MIT"

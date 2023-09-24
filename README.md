@@ -1,10 +1,27 @@
-# Conversor horário
+# Time converter
 
-- Converte de horas para minutos e minutos para horas
+- Convert minutes to hours and hours to minutes
 
-## Exemplos de conversão
+## Conversion examples
 
 - .run('1439') -> '23:59'
 - .run('23:59') -> 1439
 
-- Código por enquanto limitado aos valores acima mostrados
+- Code for now limited to the values shown above
+
+## Examples with code
+
+```
+
+import Convert from "hoursconvert";
+
+const convert = new Convert()
+
+console.log(convert.run('12:12', 732))
+
+
+```
+
+## links
+
+[Github project](https://www.google.com)
