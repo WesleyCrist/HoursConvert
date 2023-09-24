@@ -1,6 +1,6 @@
 {
   "name": "hoursconvert",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "Conversor horário",
   "main": "src/Convert.js",
   "scripts": {

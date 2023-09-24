@@ -24,4 +24,4 @@ console.log(convert.run('12:12', 732))
 
 ## links
 
-[Github project](https://www.google.com)
+[Github project](https://github.com/WesleyCrist/HoursConvert)
