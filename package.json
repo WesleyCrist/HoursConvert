@@ -1,8 +1,8 @@
 {
   "name": "hoursconvert",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "Conversor horário",
-  "main": "src/Convert.js",
+  "main": "src/HoursConvert.js",
   "scripts": {
   },
   "keywords": ["hoursconvert", "convert", "hours", "hour", "pm", "time", "times", "minutes", "min", "duration"],
