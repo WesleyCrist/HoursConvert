@@ -1,4 +1,4 @@
-import EmptyError from "./error/Empty"
+import EmptyError from "../error/Empty.js"
 
 // limitado a '23:59' horas ou 1439 minutos
 export default class Convert {
@@ -12,7 +12,7 @@ export default class Convert {
         if(typeof(i) === 'string') {
             if(i.indexOf(':') === 2) {
                 const time = i.split(':')
-                if(time.length > 2 || time.length < 0) throw new TypeError('Atributo passado em formato inválido')
+                if(time.length > 2 || time.length < 0) throw new TypeError('Atributo em formato inválido!')
                 const hora = Number(time[0])
                 const minute = Number(time[1])
                 if(!isNaN(hora) && !isNaN(minute)) {
@@ -49,7 +49,7 @@ export default class Convert {
         }
     }
 
-    run = (...hours) => {
+    run = (hours) => {
         if(hours.length === 0) throw new EmptyError('Função construtora deve receber um valor!')
         this.#input = hours
         this.#input.map(i => {
