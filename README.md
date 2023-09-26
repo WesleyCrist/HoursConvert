@@ -8,7 +8,7 @@
 ### Conversion hour examples
 
 
-- .converter('1439') -> '23:59'
+- .convert('1439') -> '23:59'
 - .converter('23:59') -> 1439
 
 - Code for now limited to the values shown above
@@ -24,7 +24,7 @@
 
 import HoursConvert from "hoursconvert"
 
-console.log(HoursConvert.converter('12:12', 732))
+console.log(HoursConvert.convert('12:12', 732))
 console.log(HoursConvert.pmToAm('11:50', '22:22'))
 
 ```
